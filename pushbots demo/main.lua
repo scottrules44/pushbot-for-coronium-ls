@@ -7,7 +7,7 @@ local os = system.getInfo( "platformName" )
 if os == "Android" then
     deviceType = 1
 elseif os ~= "iPhone OS" then
-    --error( "platform not supported for pushbot" )
+    error( "platform not supported for pushbot" )
 end
 local json = require("json")
 local notifications = require( "plugin.notifications" )
